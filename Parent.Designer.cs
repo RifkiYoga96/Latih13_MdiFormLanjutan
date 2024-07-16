@@ -31,6 +31,7 @@
             menuStrip1 = new MenuStrip();
             lisToolStripMenuItem = new ToolStripMenuItem();
             newToolStripMenuItem = new ToolStripMenuItem();
+            dataMahasiswaToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             // lisToolStripMenuItem
             // 
-            lisToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem });
+            lisToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { newToolStripMenuItem, dataMahasiswaToolStripMenuItem });
             lisToolStripMenuItem.Name = "lisToolStripMenuItem";
             lisToolStripMenuItem.Size = new Size(65, 29);
             lisToolStripMenuItem.Text = "Data";
@@ -57,6 +58,13 @@
             newToolStripMenuItem.Size = new Size(270, 34);
             newToolStripMenuItem.Text = "Data Siswa";
             newToolStripMenuItem.Click += newToolStripMenuItem_Click;
+            // 
+            // dataMahasiswaToolStripMenuItem
+            // 
+            dataMahasiswaToolStripMenuItem.Name = "dataMahasiswaToolStripMenuItem";
+            dataMahasiswaToolStripMenuItem.Size = new Size(270, 34);
+            dataMahasiswaToolStripMenuItem.Text = "Data Mahasiswa";
+            dataMahasiswaToolStripMenuItem.Click += dataMahasiswaToolStripMenuItem_Click_1;
             // 
             // Parent
             // 
@@ -79,5 +87,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem lisToolStripMenuItem;
         private ToolStripMenuItem newToolStripMenuItem;
+        private ToolStripMenuItem dataMahasiswaToolStripMenuItem;
     }
 }

@@ -13,6 +13,7 @@ namespace Latih13_MdiFormLanjutan
     public partial class Parent : Form
     {
         public Form1 ListSiswa;
+        public Mahasiswa mhs;
         public Parent()
         {
             InitializeComponent();
@@ -29,6 +30,13 @@ namespace Latih13_MdiFormLanjutan
         private void dataMahasiswaToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataMahasiswaToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            mhs = new Mahasiswa();
+            mhs.MdiParent = this;
+            mhs.Show();
         }
     }
 }
